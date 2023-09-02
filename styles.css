@@ -1,0 +1,94 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    color: black; /* Font color in light mode */
+}
+
+body.dark {
+    background-color: #333;
+    color: white; /* Font color in dark mode */
+}
+
+/* Header styles */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-radius: 12px 12px 0 0;
+    transition: background-color 0.3s;
+}
+
+/* Button styles */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Section styles */
+section {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: translateY(-5px);
+}
+
+/* Header and bullet point styles */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    transition: color 0.3s;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
